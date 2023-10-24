@@ -1,38 +1,145 @@
-.App {
-  text-align: center;
+:root{
+  --color-lightest: #fff4e6;
+  --color-light: #ffe8cc;
+  --color-medium: #ffa94d;
+  --color-dark: #ff922b;
+  margin:  1rem 7rem ;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+  /* min-height: 65vh; */
+  background: linear-gradient(#ffa94d,#ffe8cc57),url('../public/bill2.jpg');
+  background-repeat: no-repeat;
+  height: 100vh;
 }
+.App{
+ display: grid;
+ grid-template-columns: 10rem 20rem;
+ row-gap: 20px;
+}
+.card-list.selected{
+  background-color: var(--color-light);
+  border-radius: 15px;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.card{
+  display: flex;
+  gap: 40px;
+  align-items: center;
+
+}
+.card-list:hover{
+  background-color: var(--color-light);
+  border-radius: 15px;
+
+}
+.card-list{
+  display: flex;
+  /* background-color: aliceblue; */
+  gap: 20px;
+  align-items: center;
+  margin-top: 20px;
+  width: 300px;
+
+}
+.card-list img{
+  border-radius: 50%;
+}
+.card-list h2{
+  font-size: 18px;
+
+}
+.card-list p{
+  font-size: 14px;
+}
+.green{
+  color: green;
+}
+.red{
+  color: red;
+}
+.App{
+  display: grid;
+  grid-template-columns: 60fr 22fr;
+}
+.Aside .btn1 button{
+  width: 100px;
+  margin-top: 20px;
+  margin-left: 30%;
+}
+.btn{
+  background-color: var(--color-dark);
+  border: none;
+  outline: none;
+  padding: 8px;
+  width: max-content;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.form{
+  background-color: var(--color-light);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+ padding: 1.2rem;
+ margin-top: 30px;
+ width: max-content;
 
-.App-link {
-  color: #61dafb;
 }
+.form div{
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  margin-bottom: 20px;
+}
+.form div input{
+  width:  250px;
+  padding: 8px;
+  margin-left: 20px;
+  border: none;
+  background-color: var(--color-lightest);
+
+}
+.form button{
+  margin-left: 50%;
+  width: 200px;
+}
+.form2{
+  background-color: var(--color-light);
+  width: 580px;
+  padding: 10px;
+  height: 100vh;
+
+
+}
+.form2 h1{
+  font-size: 20px;
+  text-align: center;
+  margin: 20px  0 20px 0;
+}
+.form-spilt{
+  display: grid;
+  grid-template-columns: 28fr 26fr;
+  gap: 40px;
+  margin: 20px;
+
+}
+.form-spilt input{
+  /* width: 220px; */
+  border: none;
+  padding: 8px;
+}
+.form-spilt select{
+  text-align: center;
+  padding: 8px;
+
+}
+.form2 button{
+  width: 100px;
+  margin: 20px 0 30px 10px;
+  margin-left: 40%;
 }
